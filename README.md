@@ -239,7 +239,7 @@ function logout(){st=null;localStorage.removeItem('cs');document.getElementById(
 function goNow(){const t=new Date();let c=0,m=Infinity;W.forEach((w,i)=>{const d=Math.abs(t-new Date(w.d));if(d<m){m=d;c=i;}});wI=c;updD();}
 function chW(d){wI=Math.max(0,Math.min(W.length-1,wI+d));updD();}
 function updD(){updWI();if(st)renderC();}
-function updWI(){const w=W[wI];const s=new Date(w.d);const e=new Date(s);e.setDate(e.getDate()+6);const o={day:'numeric',month:'long'};document.getElementById('wt2').textContent=`Semaine ${w.n}`;document.getElementById('wd').textContent=`Du ${s.toLocaleDateString('fr-FR',o)} au ${e.toLocaleDateString('fr-FR',{...o,year:'numeric'})}`;document.getElementById('vb').innerHTML=w.v?`<div class="vb"><h3>🏖️ ${w.v}</h3><p>Profite bien !</p></div>`:'';const ds=dsD[w.n];document.getElementById('dsb').innerHTML=ds?`<div class="dsb"><div class="dsbi">📝</div><div><h3>DS Vendredi</h3><p>${ds} - L410-L413</p></div></div>`:''}
+function updWI(){const w=W[wI];const s=new Date(w.d);const e=new Date(s);e.setDate(e.getDate()+6);const o={day:'numeric',month:'long'};document.getElementById('wt2').textContent=`Semaine ${w.n}`;document.getElementById('wd').textContent=`Du ${s.toLocaleDateString('fr-FR',o)} au ${e.toLocaleDateString('fr-FR',{...o,year:'numeric'})}`;document.getElementById('vb').innerHTML=w.v?`<div class="vb"><h3>🏖️ ${w.v}</h3><p>Profite bien !</p></div>`:'';const ds=dsD[w.n];document.getElementById('dsb').innerHTML=ds?`<div class="dsb"><div class="dsbi">📝</div><div><h3>DS de la semaine</h3><p>${ds} - L410-L413</p></div></div>`:''}
 
 function renderC(){
     const g=document.getElementById('cg');
