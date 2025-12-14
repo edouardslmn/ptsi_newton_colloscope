@@ -1,4 +1,3 @@
-# ptsi_newton_colloscope.github.io
 <!DOCTYPE html>
 <html lang="fr">
 <head>
