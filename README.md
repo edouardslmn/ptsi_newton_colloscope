@@ -93,7 +93,7 @@
 </div></div></header>
 <main class="c">
 <section class="ws" id="ws">
-    <h1 class="wt">Bienvenue sur<br><span class="g">Colloscope PTSI</span></h1>
+    <h1 class="wt">Bienvenue sur<br><span class="g">Colloscope PTSI- Newton</span></h1>
     <p class="wst">Sélectionne ton nom pour accéder à tes colles personnalisées</p>
     <div class="ss">
         <div class="sc"><span class="sic">🔍</span><input type="text" class="si" id="si" placeholder="Rechercher..." oninput="filterS()"></div>
